@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index","sphinx"],envversion:53,filenames:["index.rst","sphinx.rst"],objects:{},objnames:{},objtypes:{},terms:{"\u914d\u7f6esphnix":0,content:0,html_theme:1,sphinx_rtd_them:1},titles:["Welcome to Blog\u2019s documentation!","\u914d\u7f6eSphnix"],titleterms:{"\u914d\u7f6esphnix":1,blog:0,document:0,welcom:0}})
