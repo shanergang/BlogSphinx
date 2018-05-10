@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>使用 sphinx 管理文档 &mdash; Blog 0.1 documentation</title>
+  <title>1. 使用 sphinx 管理文档 &mdash; Blog 0.1 文档</title>
   
 
   
@@ -26,20 +26,22 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   
 
   
 
   
         <link rel="index" title="索引"
-              href="genindex.html"/>
-        <link rel="search" title="搜索" href="search.html"/>
-    <link rel="top" title="Blog 0.1 documentation" href="index.html"/>
-        <link rel="prev" title="Welcome to Blog’s documentation!" href="index.html"/> 
+              href="../genindex.html"/>
+        <link rel="search" title="搜索" href="../search.html"/>
+    <link rel="top" title="Blog 0.1 文档" href="../index.html"/>
+        <link rel="up" title="机器学习" href="index.html"/>
+        <link rel="next" title="阅读" href="../coding/index.html"/>
+        <link rel="prev" title="机器学习" href="index.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -55,7 +57,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Blog
+            <a href="../index.html" class="icon icon-home"> Blog
           
 
           
@@ -72,7 +74,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -89,18 +91,17 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">使用 sphinx 管理文档</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">配置 sphinx</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">安装 sphinx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">新建 sphinx 工程</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#conf-py">配置 conf.py 文件</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">工具</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">机器学习</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. 使用 sphinx 管理文档</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.1. 配置 sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx-github">1.2. 同步 sphinx 到 github</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#sphinx-github">同步 sphinx 到 github</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../coding/index.html">阅读</a></li>
 </ul>
 
             
@@ -115,7 +116,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Blog</a>
+          <a href="../index.html">Blog</a>
         
       </nav>
 
@@ -143,15 +144,17 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>使用 sphinx 管理文档</li>
+          <li><a href="index.html">机器学习</a> &raquo;</li>
+        
+      <li>1. 使用 sphinx 管理文档</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/sphinx.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/learning/sphinx.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,19 +168,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sphinx">
-<h1>使用 sphinx 管理文档<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
+<h1>1. 使用 sphinx 管理文档<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
-<h2>配置 sphinx<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id2">
-<h3>安装 sphinx<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>在Mac的terminal下输入如下命令安装sphinx:</p>
+<h2>1.1. 配置 sphinx<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>在 Mac 的 terminal 下输入如下命令安装 sphinx:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id3">
-<h3>新建 sphinx 工程<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>新建一个文件夹，并在该文件夹下创建一个sphinx工程:</p>
+<p>新建一个文件夹，并在该文件夹下创建一个 sphinx 工程:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">Blog</span>
 <span class="n">cd</span> <span class="n">Blog</span>
 <span class="n">sphinx</span><span class="o">-</span><span class="n">quickstart</span>
@@ -187,18 +185,15 @@
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Separate</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">build</span> <span class="n">directories</span> <span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="n">N</span><span class="p">)</span> <span class="p">[</span><span class="n">n</span><span class="p">]:</span> <span class="n">y</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="conf-py">
-<h3>配置 conf.py 文件<a class="headerlink" href="#conf-py" title="Permalink to this headline">¶</a></h3>
+<p>配置 conf.py 文件</p>
 <div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">html_theme = &#39;sphinx_rtd_theme&#39;</span>
 <span class="go">language = &#39;zh_CN&#39;</span>
 </pre></div>
 </div>
 </div>
-</div>
 <div class="section" id="sphinx-github">
-<h2>同步 sphinx 到 github<a class="headerlink" href="#sphinx-github" title="Permalink to this headline">¶</a></h2>
-<p>在 github 个人主页上新建一个 repository BlogSphinx，然后通过如下命令将本地 sphnix 工程下的所有文件push到新建的 repository:</p>
+<h2>1.2. 同步 sphinx 到 github<a class="headerlink" href="#sphinx-github" title="永久链接至标题">¶</a></h2>
+<p>在 Github 个人主页上新建一个 repository BlogSphinx，然后通过如下命令将本地 sphnix 工程下的所有文件 push 到新建的 repository:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">init</span>
 <span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
 <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;initial commit&#39;</span>
@@ -206,6 +201,9 @@
 <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 </div>
+<p>ReadtheDocs</p>
+<p>在 GitHub 里选择仓库，然后依次点击 Setting =&gt; Integrations &amp; Service =&gt; Add service =&gt; ReadTheDocs，激活这个选项。</p>
+<p>到 ReadtheDocs 个人主页 import 这个仓库，导入成功后，点击阅读文档，便可看到 Web 效果了</p>
 </div>
 </div>
 
@@ -219,8 +217,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../coding/index.html" class="btn btn-neutral float-right" title="阅读" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to Blog’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral" title="机器学习" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -250,7 +250,7 @@
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../',
             VERSION:'0.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -258,16 +258,16 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
   

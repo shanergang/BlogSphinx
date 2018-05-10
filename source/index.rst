@@ -6,13 +6,17 @@
 Welcome to Blog's documentation!
 ================================
 
+目录:
+^^^^^
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :glob:
    
-   sphinx
-
-
+   reading/index
+   learning/index
+   coding/index
+   
 
 .. Indices and tables
    ==================
