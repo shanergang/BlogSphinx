@@ -6,3 +6,6 @@
    :numbered: 2
    
    sphinx
+   python_data/index
+   python_trick/index
+   python_tool/index
