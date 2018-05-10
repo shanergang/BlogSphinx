@@ -13,8 +13,8 @@ Welcome to Blog's documentation!
    :maxdepth: 2
    :glob:
    
-   reading/index
    learning/index
+   reading/index
    coding/index
    
 
