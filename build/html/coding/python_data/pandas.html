@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. 技巧 &mdash; Blog 0.1 文档</title>
+  <title>2.4. Pandas &mdash; Blog 0.1 文档</title>
   
 
   
@@ -36,9 +36,9 @@
               href="../../genindex.html"/>
         <link rel="search" title="搜索" href="../../search.html"/>
     <link rel="top" title="Blog 0.1 文档" href="../../index.html"/>
-        <link rel="up" title="代码学习" href="../index.html"/>
-        <link rel="next" title="3.1. ipynb查看程序运行时间" href="python.html"/>
-        <link rel="prev" title="2.4. Pandas" href="../python_data/pandas.html"/> 
+        <link rel="up" title="2. 数据处理" href="index.html"/>
+        <link rel="next" title="3. 技巧" href="../python_trick/index.html"/>
+        <link rel="prev" title="2.1. lsit to string" href="python.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -96,13 +96,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../reading/index.html">阅读</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">代码学习</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../sphinx.html">1. 使用 sphinx 管理文档</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../python_data/index.html">2. 数据处理</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. 技巧</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="python.html">3.1. ipynb查看程序运行时间</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#id1">3.2. 并行的实现</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#id2">3.3. 文件重命名</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">2. 数据处理</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python.html">2.1. lsit to string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#id1">2.2. 日期类型的数据</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#id5">2.3. 读写文件</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.4. Pandas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dataframe">合并 Dataframe</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python_trick/index.html">3. 技巧</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../python_tool/index.html">4. 拓展工具包</a></li>
 </ul>
 </li>
@@ -152,13 +156,15 @@
         
           <li><a href="../index.html">代码学习</a> &raquo;</li>
         
-      <li>3. 技巧</li>
+          <li><a href="index.html">2. 数据处理</a> &raquo;</li>
+        
+      <li>2.4. Pandas</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/coding/python_trick/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/coding/python_data/pandas.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -171,14 +177,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>3. 技巧<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="python.html">3.1. ipynb查看程序运行时间</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python.html#id1">3.2. 并行的实现</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python.html#id2">3.3. 文件重命名</a></li>
-</ul>
+  <div class="section" id="pandas">
+<h1>2.4. Pandas<a class="headerlink" href="#pandas" title="永久链接至标题">¶</a></h1>
+<div class="section" id="dataframe">
+<h2>合并 Dataframe<a class="headerlink" href="#dataframe" title="永久链接至标题">¶</a></h2>
+<p>将两个 Dataframe 按行组合:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">])</span>
+<span class="n">sub1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">])</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span><span class="n">sub1</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>将两个 Dataframe 按列组合:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">sub2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">])</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span><span class="n">sub2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -192,10 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="python.html" class="btn btn-neutral float-right" title="3.1. ipynb查看程序运行时间" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../python_trick/index.html" class="btn btn-neutral float-right" title="3. 技巧" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../python_data/pandas.html" class="btn btn-neutral" title="2.4. Pandas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="python.html" class="btn btn-neutral" title="2.1. lsit to string" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

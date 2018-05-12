@@ -1,8 +1,7 @@
-数据处理
+文明之光
 ========
 
 .. toctree::
    :maxdepth: 2
    
-   python
-   pandas
+   chp8

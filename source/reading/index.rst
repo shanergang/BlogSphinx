@@ -3,7 +3,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 
+   :numbered: 1
 
-   wenmingzhiguang
+   文明之光/index
    
