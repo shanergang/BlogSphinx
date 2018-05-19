@@ -6,4 +6,5 @@
    :numbered: 1
 
    文明之光/index
+   摘录/index
    
