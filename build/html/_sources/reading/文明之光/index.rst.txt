@@ -9,5 +9,6 @@
    chp11
    chp12
    chp16
+   chp20
 
 :download:`文明之光 pdf <文明之光.pdf>`
