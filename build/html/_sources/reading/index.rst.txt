@@ -2,8 +2,8 @@
 ====
 
 .. toctree::
-   :maxdepth: 2
-   :numbered: 1
+   :maxdepth: 1
+   :numbered: 2
 
    文明之光/index
    摘录/index
