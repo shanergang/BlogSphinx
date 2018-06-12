@@ -5,7 +5,7 @@
    :maxdepth: 1
    
    chp1
-   .. chp2
+   chp2
    .. chp3
    .. chp4
    .. chp5
