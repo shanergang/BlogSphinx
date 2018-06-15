@@ -8,7 +8,7 @@
    chp2
    chp3
    chp4
-   .. chp5
+   chp5
    .. chp6
    .. chp7
    .. chp8
