@@ -9,7 +9,7 @@
    chp3
    chp4
    chp5
-   .. chp6
+   chp6
    .. chp7
    .. chp8
    .. chp9
