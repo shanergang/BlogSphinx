@@ -11,7 +11,7 @@
    chp5
    chp6
    chp7
-   .. chp8
+   chp8
    .. chp9
    .. chp10
    .. chp11
